@@ -27,6 +27,9 @@ allow platform_app mnt_pass_through_file:dir { create_dir_perms mounton };
 r_dir_file(platform_app, config_gz)
 r_dir_file(platform_app, sysfs_zram)
 
+# Allow systemui to read thermal for CPUInfo
+r_dir_file(platform_app, sysfs_thermal)
+
 # Launcher apps read pm.archiving.enabled
 get_prop(platform_app, pm_archiving_enabled_prop)
 
