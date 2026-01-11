@@ -16,6 +16,10 @@ ro.vendor.audio.dolby.dax.support      u:object_r:exported_system_prop:s0
 ro.vendor.audio.dolby.dax.version      u:object_r:exported_system_prop:s0
 ro.vendor.audio.dolby.surround.enable  u:object_r:exported_system_prop:s0
 
+# Libgui WARs
+ro.lib_gui.buffer_dequeue_timeout_ms   u:object_r:bq_config_prop:s0
+ro.lib_gui.fence_timeout_ms            u:object_r:bq_config_prop:s0
+
 # Recovery battery
 ro.recovery.batteryless                u:object_r:recovery_config_prop:s0 exact bool
 
